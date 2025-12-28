@@ -1,13 +1,53 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-  </head>
-  <body>
-    <div id="app"></div>
-    <script type="module" src="/src/js/main.ts"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+    rel="stylesheet">
+  <title>Samy Dahi</title>
+</head>
+
+<body>
+  <div class="app"></div>
+  <header class="header"></header>
+  <div class="container">
+    <div class="presentation-container">
+      <p class="i-am-text">I am...</p>
+      <section class="me-section">
+        <img class="me" height="267" width="200" src="/public/me.jpeg" alt="photo_of_me">
+        <p>Samy Dahi</h1>, brilliant mind coming from Normandy, France</p>
+      </section>
+
+      <section class="language-section">
+        <p>bilingual, speaking French and English fluently</p>
+        <div class="choose-language">
+          <a class="english-language" href="">English</a>
+          <a class="french-language" href="">Français</a>
+        </div>
+      </section>
+
+      <section class="webdev">
+        <p>an excellent full-stack web developper, knowing Laravel and React</p>
+        <div class="framework-images">
+          <img height="200" width="192" src="public/laravel.png" alt="laravel logo">
+          <img height="200" width="225" src="public/react.png" alt="react logo">
+        </div>
+      </section>
+
+      <section class="bitcoin-section">
+        <p>an expert in Bitcoin, the insides of the protocol as well as its economics</p>
+        <div class="bitcoin-logo-container"><img height="200" width="200" class="bitcoin-logo" src="public/bitcoin.png" alt="bitcoin logo"></div>
+      </section>
+      
+    </div>
+  </div>
+
+  <script type="module" src="/src/js/main.ts"></script>
+</body>
+
 </html>
