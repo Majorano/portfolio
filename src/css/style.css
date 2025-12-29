@@ -6,8 +6,6 @@
 
 }
 
-
-
 .header {
   background-color: var(--primary-color);
 }
@@ -60,14 +58,27 @@
   margin-top: 1em;
   display: flex;
   justify-content: center;
-  gap: 28px;
+  gap: 48px;
+}
+
+.choose-language {
+  border-radius: 100px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
+
+  padding: 24px 48px;
+
+  max-width: fit-content;
+  margin-inline: auto;
 }
 .choose-language a {
   text-decoration: none;
+  color: black;
 }
 .choose-language a:not(.active-link) {
-  color: rgb(150, 150, 150);
+  opacity: 40%;
+
 }
-.active-link {
-  color: black;
+
+.bitcoin-logo-container {
+  margin-bottom: 48px;
 }
