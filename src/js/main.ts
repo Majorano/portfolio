@@ -4,7 +4,7 @@ import '../css/style.css'
 const englishLanguageLink = document.querySelector('.english-language')
 const frenchLanguageLink = document.querySelector('.french-language')
 
-
+const translationFolder = "/translation"
 
 async function translateTo(language: "en" | "fr") {
 
@@ -13,12 +13,12 @@ async function translateTo(language: "en" | "fr") {
 
     let data: string
     if (document.documentElement.lang !== "en" && language === "en") {
-        const r = await fetch('/public/translation/en.html')
+        const r = await fetch(`${translationFolder}/en.html`)
         if (!r.ok) return
         data = await r.text()
     } else if (document.documentElement.lang !== "fr" && language === "fr") {
 
-        const r = await fetch('/public/translation/fr.html')
+        const r = await fetch(`${translationFolder}/fr.html`)
         if (!r.ok) return
         data = await r.text()
         
