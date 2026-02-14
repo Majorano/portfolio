@@ -1,84 +1,14 @@
-@import './reset.css';
+/* @import './reset.css';*/
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
+@import "tailwindcss";
 
-:root {
-  --primary-color: #ff6b6b;
+@theme {
+  /* --primary-color: #ff6b6b;
   --secondary-color: #ffe66d;
+ */
+  --font-inter: "Inter", sans-serif;
 
-}
+  --color-disabled: #989898;
+  --color-paragraph: black;
 
-.header {
-  background-color: var(--primary-color);
-}
-
-.container {
-  max-width: 1200px;
-  margin-inline: auto;
-  margin-top: 12px;
-  padding-inline: 16px;
-  font-family: "Inter", sans-serif;
-
-}
-
-.presentation-container {
-  display: grid;
-  gap: 64px;
-}
-
-.i-am-text {
-  font-size: 48px;
-  font-weight: 600;
-  margin-bottom: 12px;
-}
-
-.i-am-list {
-  list-style-type: disc;
-  list-style-position: inside;
-  font-weight: 300;
-
-  display: grid;
-  gap: 12px;
-}
-
-.me-section {
-  display: flex;
-  gap: 32px;
-  font-size: 32px;
-  align-items: center;
-}
-
-.me {
-  border-radius: 16px;
-}
-
-.language-section, .webdev, .bitcoin-section {
-  font-size: 32px;
-}
-
-.choose-language, .framework-images, .bitcoin-logo-container  {
-  margin-top: 1em;
-  display: flex;
-  justify-content: center;
-  gap: 48px;
-}
-
-.choose-language {
-  border-radius: 100px;
-  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 25%);
-
-  padding: 24px 48px;
-
-  max-width: fit-content;
-  margin-inline: auto;
-}
-.choose-language a {
-  text-decoration: none;
-  color: black;
-}
-.choose-language a:not(.active-link) {
-  opacity: 40%;
-
-}
-
-.bitcoin-logo-container {
-  margin-bottom: 48px;
 }

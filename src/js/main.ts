@@ -1,8 +1,8 @@
 import '../css/style.css'
 
 
-const englishLanguageLink = document.querySelector('.english-language')
-const frenchLanguageLink = document.querySelector('.french-language')
+const englishLanguageLink = document.querySelector('[data-english-language]')
+const frenchLanguageLink = document.querySelector('[data-french-language]')
 
 const translationFolder = "/translation"
 
@@ -40,12 +40,12 @@ async function translateTo(language: "en" | "fr") {
 
 function changeLanguage() {
     if (document.documentElement.lang === "en") {
-        englishLanguageLink?.classList.add('active-link')
-        frenchLanguageLink?.classList.remove('active-link')
+        englishLanguageLink?.classList.add('text-paragraph')
+        frenchLanguageLink?.classList.remove('text-paragraph')
 
     } else if (document.documentElement.lang === "fr") {
-        frenchLanguageLink?.classList.add('active-link')
-        englishLanguageLink?.classList.remove('active-link')
+        frenchLanguageLink?.classList.add('text-paragraph')
+        englishLanguageLink?.classList.remove('text-paragraph')
     }
 }
 
