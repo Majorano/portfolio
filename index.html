@@ -3,49 +3,50 @@
 
 <head>
   <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/portfolio/assets/favicon-5LxkExnJ.svg">
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link
-    href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
-    rel="stylesheet">
   <title>Samy Dahi</title>
-  <script type="module" crossorigin src="/portfolio/assets/index-CHOd7uE1.js"></script>
-  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-CyHDyImZ.css">
+  <script type="module" crossorigin src="/portfolio/assets/index-BKZ2l8SW.js"></script>
+  <link rel="stylesheet" crossorigin href="/portfolio/assets/index-o1yqYLi0.css">
 </head>
 
 <body>
-  <div class="container">
-    <div class="presentation-container">
-      <p data-text-i-am class="i-am-text">I am...</p>
-      <section class="me-section">
-        <img class="me" height="267" width="200" src="/portfolio/assets/me-B2I53QyS.jpeg" alt="photo_of_me">
-        <p data-text-me><strong>Samy Dahi</strong>, brilliant mind coming from Normandy, France</p>
+  <div class="container mx-auto px-12 font-inter">
+    <div>
+      <p data-text-i-am class="text-5xl mb-16 mt-8">I am...</p>
+      <section class="mb-4 flex items-center gap-x-8">
+        <img class=" rounded-2xl" height="267" width="200" src="/portfolio/assets/me-B2I53QyS.jpeg" alt="photo_of_me">
+        <p class="text-3xl" data-text-me><strong>Samy Dahi</strong>, brilliant mind coming from Normandy, France</p>
       </section>
-
-      <section class="language-section">
+      <section class="text-3xl mt-8">
         <p data-text-language>bilingual, speaking French and English fluently</p>
-        <div class="choose-language">
-          <a class="english-language" href="">English</a>
-          <a class="french-language" href="">Français</a>
+        <div class="flex my-8 max-w-fit mx-auto p-8 gap-12 rounded-full shadow-sm">
+          <a data-english-language class=" text-disabled" href="">English</a>
+          <a data-french-language class="text-disabled" href="">Français</a>
         </div>
       </section>
 
-      <section class="webdev">
+      <section class=" text-3xl">
         <p data-text-webdev>an excellent full-stack web developper, knowing Laravel and React</p>
-        <div class="framework-images">
+        <div class=" flex gap-12 my-12 justify-center">
           <img height="200" width="192" src="/portfolio/assets/laravel-BdhsxyGP.png" alt="laravel logo">
           <img height="200" width="225" src="/portfolio/assets/react-Cm0xRHeA.png" alt="react logo">
         </div>
       </section>
 
-      <section class="bitcoin-section">
+      <section class="text-3xl mb-8">
         <p data-text-bitcoin>an expert in Bitcoin, the workings of the protocol as well as its economics</p>
-        <div class="bitcoin-logo-container"><img height="200" width="200" class="bitcoin-logo" src="/portfolio/assets/bitcoin-GgXfgzP5.png" alt="bitcoin logo"></div>
+        <div class=" flex justify-center mt-12">
+          <img height="200" width="200" src="/portfolio/assets/bitcoin-GgXfgzP5.png" alt="bitcoin logo">
+        </div>
       </section>
-      
+
     </div>
   </div>
+  <footer class="border-t py-8 flex flex-wrap justify-center gap-16 ">
+    <a class="underline" href="https://github.com/Majorano">Github</a>
+    <a href="mailto:samydahipro@gmail.com">samydahipro@gmail.com</a>
+  </footer>
 
 </body>
 
