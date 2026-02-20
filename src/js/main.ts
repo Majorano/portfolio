@@ -17,9 +17,7 @@ darkModeButton?.addEventListener('click', () => {
 const englishLanguageLink = document.querySelector('[data-english-language]')
 const frenchLanguageLink = document.querySelector('[data-french-language]')
 
-const translationFolder = "/translation"
-
-
+const translationFolder = `${import.meta.env.BASE_URL}translation`
 
 async function translateTo(language: "en" | "fr") {
 
