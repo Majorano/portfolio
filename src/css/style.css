@@ -2,13 +2,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&display=swap');
 @import "tailwindcss";
 
+/* this line is here to handle dark mode */
+@custom-variant dark (&:where(.dark, .dark *));
+
 @theme {
-  /* --primary-color: #ff6b6b;
-  --secondary-color: #ffe66d;
- */
+
   --font-inter: "Inter", sans-serif;
 
   --color-disabled: #989898;
-  --color-paragraph: black;
+  --color-light-paragraph: black;
 
+  --color-dark-header: #0a1942;
+  --color-dark-paragraph: white;
+  --color-dark-bg: #030712;
+
+}
+
+.inactive-link {
+  color: var(--color-disabled);
 }
