@@ -28,11 +28,26 @@ if (navigatorLanguage === "fr") {
 }
 changeLanguage()
 
+const activeLanguage = document.querySelector<HTMLElement>('[data-active-language]')!
+const languageDialog = document.querySelector<HTMLDialogElement>('[data-language-dialog]')
+
+
+activeLanguage?.addEventListener('click', () => {
+    if (!languageDialog?.open) {
+        languageDialog?.show()
+    } else if (languageDialog?.open) {
+        languageDialog.close()
+    }
+})
+
 englishLanguageLink?.addEventListener('click', (e) => {
     e.preventDefault()
     translateTo("en")
     document.documentElement.lang = "en"
     changeLanguage()
+
+    languageDialog?.close()
+    activeLanguage.innerText = "EN"
 
 })
 
@@ -41,6 +56,10 @@ frenchLanguageLink?.addEventListener('click', (e) => {
     translateTo('fr')
     document.documentElement.lang = "fr"
     changeLanguage()
+
+    languageDialog?.close()
+    activeLanguage.innerText = "FR"
+
 
 })
 
