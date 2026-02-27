@@ -48,7 +48,6 @@ englishLanguageLink?.addEventListener('click', (e) => {
 
     languageDialog?.close()
     activeLanguage.innerText = "EN"
-
 })
 
 frenchLanguageLink?.addEventListener('click', (e) => {
