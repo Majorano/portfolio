@@ -31,7 +31,7 @@ changeLanguage()
 const activeLanguage = document.querySelector<HTMLElement>('[data-active-language]')!
 const languageDialog = document.querySelector<HTMLDialogElement>('[data-language-dialog]')
 
-
+// opens or closes the modal to choose a language when clicking on the current language 
 activeLanguage?.addEventListener('click', () => {
     if (!languageDialog?.open) {
         languageDialog?.show()
